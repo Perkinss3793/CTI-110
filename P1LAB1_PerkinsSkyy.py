@@ -1,0 +1,20 @@
+# Skyy Perkins
+# 9/10/2026
+# Inputs and Outputs
+
+# Get first name
+first_name = input("Enter your first name: ")
+
+# Get last name
+last_name = input("Enter your last name: ")
+
+# Output welcome message to user
+# Used concatenation in the output (+)
+print("Hello,", first_name, last_name + "!!! Welcome to CTI-110")
+print()
+print()
+print("Hello,", first_name, last_name + "!!! Welcome to CTI-110")
+print()
+print()
+# Use f-string
+print(f"Hello, {first_name} {last_name}!!! Welcome to CTI-110")
