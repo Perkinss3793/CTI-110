@@ -4,7 +4,7 @@
   "metadata": {
     "colab": {
       "provenance": [],
-      "authorship_tag": "ABX9TyP8P3aXP9VAkbr1HSEd9r3d",
+      "authorship_tag": "ABX9TyPSd75OF38OPNUrfoBQfGfH",
       "include_colab_link": true
     },
     "kernelspec": {
@@ -28,31 +28,22 @@
     },
     {
       "cell_type": "code",
-      "execution_count": 1,
+      "execution_count": 7,
       "metadata": {
         "colab": {
-          "base_uri": "https://localhost:8080/"
+          "base_uri": "https://localhost:8080/",
+          "height": 106
         },
         "id": "L-Bt0KbHzd4W",
-        "outputId": "7f3a6955-37e3-42e1-b01f-3b3fed19530b"
+        "outputId": "874af858-64c4-437f-a100-b771971f40ed"
       },
       "outputs": [
         {
-          "output_type": "stream",
-          "name": "stdout",
-          "text": [
-            "Enter the test grade for Module 1: 100\n",
-            "Enter the test grade for Module 2: 90\n",
-            "Enter the test grade for Module 3: 80\n",
-            "Enter the test grade for Module 4: 70\n",
-            "Enter the test grade for Module 5: 60\n",
-            "Enter the test grade for Module 6: 50\n",
-            "-----------Results-----------\n",
-            "Your lowest grade is 50.0\n",
-            "Your highest grade is 100.0\n",
-            "The sum of test grades is  450.00\n",
-            "Total number of items in\n",
-            "----------------------\n"
+          "output_type": "error",
+          "ename": "SyntaxError",
+          "evalue": "'(' was never closed (4144732113.py, line 35)",
+          "traceback": [
+            "\u001b[0;36m  File \u001b[0;32m\"/tmp/ipykernel_895/4144732113.py\"\u001b[0;36m, line \u001b[0;32m35\u001b[0m\n\u001b[0;31m    print(f\"Average: = { (sum_total) / len (test_grades)})\"\u001b[0m\n\u001b[0m         ^\u001b[0m\n\u001b[0;31mSyntaxError\u001b[0m\u001b[0;31m:\u001b[0m '(' was never closed\n"
           ]
         }
       ],
@@ -63,12 +54,12 @@
         "# Write a program that asks the user to enter test grades for Modules 1 - 6 and performing computational functions.\n",
         "\n",
         "# Get six test grades for module 1 - module 6 from user\n",
-        "Module1 = float(input(\"Enter the test grade for Module 1: \"))\n",
-        "Module2 = float(input(\"Enter the test grade for Module 2: \"))\n",
-        "Module3 = float(input(\"Enter the test grade for Module 3: \"))\n",
-        "Module4 = float(input(\"Enter the test grade for Module 4: \"))\n",
-        "Module5 = float(input(\"Enter the test grade for Module 5: \"))\n",
-        "Module6 = float(input(\"Enter the test grade for Module 6: \"))\n",
+        "Module1 = float(input(\"Enter the grade for Module 1: \"))\n",
+        "Module2 = float(input(\"Enter the grade for Module 2: \"))\n",
+        "Module3 = float(input(\"Enter the grade for Module 3: \"))\n",
+        "Module4 = float(input(\"Enter the grade for Module 4: \"))\n",
+        "Module5 = float(input(\"Enter the grade for Module 5: \"))\n",
+        "Module6 = float(input(\"Enter the grade for Module 6: \"))\n",
         "\n",
         "# Store grades in a list\n",
         "test_grades = [Module1, Module2, Module3, Module4, Module5, Module6]\n",
@@ -76,24 +67,24 @@
         "print(\"-----------Results-----------\")\n",
         "\n",
         "# Display the lowest test grade\n",
-        "print(f\"Your lowest grade is {min (test_grades)}\")\n",
+        "print(f\"Lowest grade: {min (test_grades)}\")\n",
         "\n",
         "# Display the highest grade\n",
-        "print(f\"Your highest grade is {max (test_grades)}\")\n",
+        "print(f\"Highest grade: {max (test_grades)}\")\n",
         "\n",
         "# Add all of test grades to get the sum\n",
         "sum_total = sum(test_grades)\n",
         "\n",
         "# Display the sum of all test grades\n",
-        "print(f\"The sum of test grades is {sum_total: .2f}\")\n",
+        "print(f\"Sum of grades: {sum_total: .2f}\")\n",
         "\n",
         "# Get the number of items in the list\n",
-        "print(f\"Total number of items in lists: {}\")\n",
+        "len = (f\"Total number of items in lists: {len (test_grades)}\")\n",
         "\n",
         "# Average of test grades\n",
-        "average = sum (test_grades) / len (test_grades)\n",
+        "print(f\"Average: = { (sum_total) / len (test_grades)})\"\n",
         "\n",
-        "print(\"----------------------\")"
+        "print(\"--------------------------------------\")"
       ]
     }
   ]
