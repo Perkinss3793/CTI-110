@@ -4,7 +4,7 @@
   "metadata": {
     "colab": {
       "provenance": [],
-      "authorship_tag": "ABX9TyPSd75OF38OPNUrfoBQfGfH",
+      "authorship_tag": "ABX9TyMFf3TGGwiNE/DHtqEj+o4/",
       "include_colab_link": true
     },
     "kernelspec": {
@@ -28,22 +28,22 @@
     },
     {
       "cell_type": "code",
-      "execution_count": 7,
+      "execution_count": 12,
       "metadata": {
         "colab": {
           "base_uri": "https://localhost:8080/",
           "height": 106
         },
         "id": "L-Bt0KbHzd4W",
-        "outputId": "874af858-64c4-437f-a100-b771971f40ed"
+        "outputId": "2b77b036-4833-4da0-d513-02ffc3cd9940"
       },
       "outputs": [
         {
           "output_type": "error",
           "ename": "SyntaxError",
-          "evalue": "'(' was never closed (4144732113.py, line 35)",
+          "evalue": "invalid syntax. Perhaps you forgot a comma? (2249708021.py, line 35)",
           "traceback": [
-            "\u001b[0;36m  File \u001b[0;32m\"/tmp/ipykernel_895/4144732113.py\"\u001b[0;36m, line \u001b[0;32m35\u001b[0m\n\u001b[0;31m    print(f\"Average: = { (sum_total) / len (test_grades)})\"\u001b[0m\n\u001b[0m         ^\u001b[0m\n\u001b[0;31mSyntaxError\u001b[0m\u001b[0;31m:\u001b[0m '(' was never closed\n"
+            "\u001b[0;36m  File \u001b[0;32m\"/tmp/ipykernel_895/2249708021.py\"\u001b[0;36m, line \u001b[0;32m35\u001b[0m\n\u001b[0;31m    average = sum_total / len (test grades)\u001b[0m\n\u001b[0m                               ^\u001b[0m\n\u001b[0;31mSyntaxError\u001b[0m\u001b[0;31m:\u001b[0m invalid syntax. Perhaps you forgot a comma?\n"
           ]
         }
       ],
@@ -82,7 +82,9 @@
         "len = (f\"Total number of items in lists: {len (test_grades)}\")\n",
         "\n",
         "# Average of test grades\n",
-        "print(f\"Average: = { (sum_total) / len (test_grades)})\"\n",
+        "average = sum_total / len (test grades)\n",
+        "print(\"Average: \")\n",
+        "\n",
         "\n",
         "print(\"--------------------------------------\")"
       ]
