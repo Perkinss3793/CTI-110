@@ -4,7 +4,7 @@
   "metadata": {
     "colab": {
       "provenance": [],
-      "authorship_tag": "ABX9TyMFf3TGGwiNE/DHtqEj+o4/",
+      "authorship_tag": "ABX9TyPcFskSe6IkfTBCR2KX4QKw",
       "include_colab_link": true
     },
     "kernelspec": {
@@ -28,22 +28,31 @@
     },
     {
       "cell_type": "code",
-      "execution_count": 12,
+      "execution_count": 29,
       "metadata": {
         "colab": {
-          "base_uri": "https://localhost:8080/",
-          "height": 106
+          "base_uri": "https://localhost:8080/"
         },
         "id": "L-Bt0KbHzd4W",
-        "outputId": "2b77b036-4833-4da0-d513-02ffc3cd9940"
+        "outputId": "e6618e3e-7404-45d3-c8bb-e6611f8db824"
       },
       "outputs": [
         {
-          "output_type": "error",
-          "ename": "SyntaxError",
-          "evalue": "invalid syntax. Perhaps you forgot a comma? (2249708021.py, line 35)",
-          "traceback": [
-            "\u001b[0;36m  File \u001b[0;32m\"/tmp/ipykernel_895/2249708021.py\"\u001b[0;36m, line \u001b[0;32m35\u001b[0m\n\u001b[0;31m    average = sum_total / len (test grades)\u001b[0m\n\u001b[0m                               ^\u001b[0m\n\u001b[0;31mSyntaxError\u001b[0m\u001b[0;31m:\u001b[0m invalid syntax. Perhaps you forgot a comma?\n"
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter the grade for Module 1: 80\n",
+            "Enter the grade for Module 2: 70\n",
+            "Enter the grade for Module 3: 60\n",
+            "Enter the grade for Module 4: 50\n",
+            "Enter the grade for Module 5: 40\n",
+            "Enter the grade for Module 6: 30\n",
+            "-----------Results-----------\n",
+            "Lowest grade: 30.0\n",
+            "Highest grade: 80.0\n",
+            "Sum of grades:  330.0\n",
+            "Average: {(sum_total) / (len)}\n",
+            "--------------------------------------\n"
           ]
         }
       ],
@@ -76,14 +85,14 @@
         "sum_total = sum(test_grades)\n",
         "\n",
         "# Display the sum of all test grades\n",
-        "print(f\"Sum of grades: {sum_total: .2f}\")\n",
+        "print(f\"Sum of grades: {sum_total: .1f}\")\n",
         "\n",
         "# Get the number of items in the list\n",
-        "len = (f\"Total number of items in lists: {len (test_grades)}\")\n",
+        "len = (test_grades)\n",
         "\n",
         "# Average of test grades\n",
-        "average = sum_total / len (test grades)\n",
-        "print(\"Average: \")\n",
+        "\n",
+        "print(\"Average: {(sum_total) / (len)}\")\n",
         "\n",
         "\n",
         "print(\"--------------------------------------\")"
