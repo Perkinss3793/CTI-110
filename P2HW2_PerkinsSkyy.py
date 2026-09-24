@@ -4,7 +4,7 @@
   "metadata": {
     "colab": {
       "provenance": [],
-      "authorship_tag": "ABX9TyNov6BEEcWgmx73iWfo46gj",
+      "authorship_tag": "ABX9TyNrdWfqhY7dFbOMXEFn+8HB",
       "include_colab_link": true
     },
     "kernelspec": {
@@ -28,42 +28,41 @@
     },
     {
       "cell_type": "code",
-      "execution_count": 7,
+      "execution_count": 34,
       "metadata": {
         "colab": {
           "base_uri": "https://localhost:8080/",
-          "height": 402
+          "height": 384
         },
         "id": "L-Bt0KbHzd4W",
-        "outputId": "162ae509-1963-4105-a5ad-ee9368f095c4"
+        "outputId": "85bddf2e-b061-4117-c0ff-eda496a82a35"
       },
       "outputs": [
         {
           "output_type": "stream",
           "name": "stdout",
           "text": [
-            "Enter the grade for Module 1: 100\n",
-            "Enter the grade for Module 2: 90\n",
-            "Enter the grade for Module 3: 80\n",
-            "Enter the grade for Module 4: 70\n",
-            "Enter the grade for Module 5: 60\n",
-            "Enter the grade for Module 6: 50\n",
+            "Enter the grade for Module 1: 1\n",
+            "Enter the grade for Module 2: 2\n",
+            "Enter the grade for Module 3: 3\n",
+            "Enter the grade for Module 4: 4\n",
+            "Enter the grade for Module 5: 5\n",
+            "Enter the grade for Module 6: 6\n",
             "-----------Results-----------\n",
-            "Lowest grade: 50.0\n",
-            "Highest grade: 100.0\n",
-            "Sum of grades:  450.0\n",
-            "Average:\n"
+            "Lowest Grade: 1.0\n",
+            "Highest Grade: 6.0\n",
+            "Sum of Grades:  21.0\n"
           ]
         },
         {
           "output_type": "error",
           "ename": "TypeError",
-          "evalue": "'float' object is not iterable",
+          "evalue": "'list' object is not callable",
           "traceback": [
             "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
             "\u001b[0;31mTypeError\u001b[0m                                 Traceback (most recent call last)",
-            "\u001b[0;32m/tmp/ipykernel_2149/3984771325.py\u001b[0m in \u001b[0;36m<cell line: 0>\u001b[0;34m()\u001b[0m\n\u001b[1;32m     34\u001b[0m \u001b[0;31m# Average of test grades\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m     35\u001b[0m \u001b[0mprint\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m\"Average:\"\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m---> 36\u001b[0;31m \u001b[0mAverage\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0msum\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0msum_total\u001b[0m\u001b[0;34m)\u001b[0m \u001b[0;34m/\u001b[0m \u001b[0mlen\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mtest_grades\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m     37\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m     38\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n",
-            "\u001b[0;31mTypeError\u001b[0m: 'float' object is not iterable"
+            "\u001b[0;32m/tmp/ipykernel_4488/144264278.py\u001b[0m in \u001b[0;36m<cell line: 0>\u001b[0;34m()\u001b[0m\n\u001b[1;32m     31\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m     32\u001b[0m \u001b[0;31m# Get the number of items in the list\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m---> 33\u001b[0;31m \u001b[0mnum_grades\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0mlen\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mtest_grades\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m     34\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m     35\u001b[0m \u001b[0;31m# Average of test grades\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
+            "\u001b[0;31mTypeError\u001b[0m: 'list' object is not callable"
           ]
         }
       ],
@@ -71,6 +70,7 @@
         "# Skyy Perkins\n",
         "# 09/22/2026\n",
         "# P2HW2\n",
+        "\n",
         "# Write a program that asks the user to enter test grades for Modules 1 - 6 and performing computational functions.\n",
         "\n",
         "# Get six test grades for module 1 - module 6 from user\n",
@@ -99,11 +99,19 @@
         "print(f\"Sum of Grades: {sum_total: .1f}\")\n",
         "\n",
         "# Get the number of items in the list\n",
-        "len = (test_grades)\n",
+        "num_grades = len(test_grades)\n",
         "\n",
         "# Average of test grades\n",
-        "print(\"Average: .2f\")\n",
-        "Average = sum(sum_total) / len(test_grades)\n",
+        "Average = sum_total / num_grades\n",
+        "print(f\"Average: {Average: .2f}\")\n",
+        "\n",
+        "\n",
+        "\n",
+        "\n",
+        "\n",
+        "\n",
+        "\n",
+        "\n",
         "\n",
         "\n",
         "\n",
