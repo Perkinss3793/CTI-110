@@ -28,13 +28,13 @@
     },
     {
       "cell_type": "code",
-      "execution_count": 82,
+      "execution_count": 83,
       "metadata": {
         "colab": {
           "base_uri": "https://localhost:8080/"
         },
         "id": "z1FEDtnGPxCD",
-        "outputId": "fdbb79a1-3338-42f7-ff41-5f30b2a55377"
+        "outputId": "eaf438eb-4b02-492e-c5b4-762bfb64c779"
       },
       "outputs": [
         {
@@ -43,14 +43,14 @@
           "text": [
             "Enter your budget amount: 2000\n",
             "Enter your travel destination: New York City\n",
-            "Enter the estimated amount of money that you will spend for gas: 650\n",
-            "Enter the approximate amount that you will need for accomodation/hotel: 400\n",
+            "Enter the estimated amount of money that you will spend for gas: 450\n",
+            "Enter the approximate amount that you will need for accomodation/hotel: 600\n",
             "Enter the amount that you will spend for food: 250\n",
             "----------------Travel Expenses-------------\n",
             "Location:               New York City\n",
             "Initial Budget:          2,000.00\n",
-            "Gas Expense:             650.00\n",
-            "Accomodation Expense:    400.00\n",
+            "Gas Expense:             450.00\n",
+            "Accomodation Expense:    600.00\n",
             "Food Expense:            250.00\n",
             "--------------------------------------------------\n",
             "The remaining balance: 700.0\n"
@@ -117,7 +117,7 @@
       "metadata": {
         "id": "sJilyi2yget2"
       },
-      "execution_count": 82,
+      "execution_count": 83,
       "outputs": []
     }
   ]
