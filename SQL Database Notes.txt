@@ -1,0 +1,12 @@
+Database made up of tables
+Every table has a name - one word is best or use underscrores
+Every table MUST have a primary key column
+	-Primary Keys(PKs) must be unique
+Foreign Keys relate the tables together
+Foreign keys reference the PKs from other tables
+
+RULES OF RELATIONAL DATABASE
+	-One table per entity
+Remove all duplicate rows BEFORE adding PKs
+
+EACH CELL CAN ONLY HOLD ONE PIECE OF DATA
